@@ -1,13 +1,11 @@
-# Your Exporter
+# Compound Exporter
 
-This exporter will become super powerful package that exports design system data into production-ready code. When you are ready to publish it, don't forget to write a nice Readme!
+This exporter outputs CSS variable files from Supernova Design Tokens
 
 ## Exporter Features
 
-Here are the key features of this exporter:
-
-- **Support for X:** Generates X from your design system
-- **Support for Y:** It also supports Y!
+- Each token is prefixed with "co-"
+- Each token type is created in it's own file
 
 ## Example of Output
 
@@ -17,16 +15,10 @@ Given any design system, the exporter will produce CSS color definitions in the 
 /* This file was automatically generated. Do not modify manually. */
 
 :root {
-  /* The reddest of reds */
-  --color-red: #ff0000;
-  --color-blue: #0000ff;
-  /* The main color used throughout the application. */
-  --color-primary: var(--color-red);
+  --co-color-action-primary-border: #ffffff00;
+  --co-color-action-primary-hover-border: #ffffff00;
+  --co-color-action-secondary-background: #ffffff00;
+  --co-color-action-tertiary-background: #ffffff00;
+  --co-color-action-tertiary-border: #ffffff00;
 }
 ```
-
-## Configuration Options
-
-Here is a list of all the configuration options this exporter provides:
-
-- **generateDisclaimer:** Toggle to show a disclaimer indicating the file is auto-generated.
